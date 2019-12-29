@@ -47,8 +47,6 @@
       <li class="nav-item">
         <a class="nav-link text-white" href="/all-posts">All Posts</a>
       </li>
-    </ul>
-      <ul class="nav nav-pills justify-content-end ml-auto">
       <li class="nav-item">
         <a class="nav-link text-white" href="/dashboard">Admin</a>
       </li>
@@ -59,10 +57,10 @@
 </div>
 
     <div class="container">
-<div class="row mb-5">
+<div class="row mb-md-5">
   <div class="col-12 d-flex justify-content-center">
-    <div class="logo h-100"><img class="img-fluid" src="images/php.jpg" alt="logo"></div>
-    <div class=" h-100 align-items-center">
+    <div class="logo"><img class="img-fluid d-none d-sm-block" src="images/php.jpg" alt="logo"></div>
+    <div class=" h-100 align-items-center text-center">
       <h1 class="blog-title ml-3 mt-5">PHP lovers Blog</h1>
       <p class="lead blog-description ml-3">PHP News, tutorials, videos & more</p>
       </div>
