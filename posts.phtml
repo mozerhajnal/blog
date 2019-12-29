@@ -1,0 +1,20 @@
+<?php include 'includes/header.php'; ?>
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 blog-main">
+    <?php if($posts): ?> 
+        <?php foreach($posts as $post) :?>
+     <div class="blog-post mt-5 mb-5">
+        <h2 class="blog-post-title"><?= $post['title']?></h2>
+        <p class="blog-post-meta"><?= formatDate($post['date'])?> by <a href="#"><?= $post['author']?></a></p>
+        <?= shortenText($post['body']) ?>
+        <a class="readmore" href="/single-post?id=<?= $post['id']?>">Read More</a>
+
+      </div><!-- /.blog-post -->
+        <?php endforeach; ?>
+    <?php else: ?>    
+        <p>There are no posts yet</p>
+    <?php endif; ?>
+    </div><!-- /.blog-main -->
+    <?php include 'includes/footer.php'; ?>

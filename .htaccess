@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_URI} ^.*public/(.*)
+  RewriteRule ^(.*)$ public/%1 [END]
+
+  RewriteCond %{REQUEST_URI} ^.*images/(.*)
+  RewriteRule ^(.*)$ images/%1 [END]
+
+  RewriteCond %{REQUEST_URI} ^.*helpers/(.*)
+  RewriteRule ^(.*)$ helpers/%1 [END]
+
+  RewriteRule (.*)  index.php [QSA]
+</IfModule>

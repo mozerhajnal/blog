@@ -1,0 +1,13 @@
+<?php include 'includes/header.php'; ?>
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 blog-main">
+<div class="blog-post">
+        <h2 class="blog-post-title mt-5"><?= $post['title']?></h2>
+        <p class="blog-post-meta mt-3"><?= formatDate($post['date'])?> by <a href="#"><?= $post['author']?></a></p>
+        <p class="text-justify mt-3"><?= $post['body'] ?></p>
+
+      </div><!-- /.blog-post -->
+      </div><!-- /.blog-main -->
+
+<?php include 'includes/footer.php'; ?>
